@@ -1,0 +1,9 @@
+# Cooldown 1 minute can also be second or hours and days #
+command /test:
+  cooldown: 1 minute
+  cooldown message: &c&lYou Need to wait 1 minute! # cooldown message so if you try to spam it it shows this message #
+  cooldown bypass: op # cooldown bypass for it to work you need operator/op on the server #
+  trigger: # triggers what under this #
+    spawn a pig at location of player # spawns a pig at location of the player #
+    give player 2 cooked porkchop # gives player a cooked porkchop #
+    send "test" to player # sends a message to the player that executes the command #
